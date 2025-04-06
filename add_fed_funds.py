@@ -3,7 +3,7 @@ import requests
 from datetime import datetime, timedelta
 
 # API Key and Base URL for fetching Federal Funds Rate data
-api_key = "d96d0089f179de7002e6e96135cb2f5c"
+
 start_date = (datetime.now() - timedelta(days=8 * 365)).strftime("%Y-%m-%d")  # Last 8 years
 url = f"https://api.stlouisfed.org/fred/series/observations?series_id=FEDFUNDS&api_key={api_key}&file_type=json&observation_start={start_date}"
 
